@@ -1,0 +1,129 @@
+body{
+    
+    .logo{
+        min-height: 18rem;
+        min-width: 100%;
+        background-color: $black;
+        position: relative;
+        @include media('>=tablet'){
+            position: fixed;
+            z-index: 2;
+        }
+        @include media('>=desktop'){
+            min-height: 10rem;
+        }
+        
+        a {
+            img{
+            width: 25rem;
+            position: absolute;
+            top: -20%;
+            left: 50%;
+            transform:translate(-50%, 0%);
+            @include media('>=tablet'){
+                left: 10%;
+                top: 25%;
+                transform: translate(-30%);
+                z-index: 2;
+            @include media('>=desktop'){
+                left: 6.5%;
+                top: 5%;
+            }
+            
+            }   
+            }
+        }
+        &__ham{
+            a{
+                display: inline-block;
+                .fa-bars{
+                    position: absolute;
+                    top: 10%;
+                    right: 8%;
+                    font-size: $fs-m;
+                    color:$white;
+                    @include media('>=tablet'){
+                        display: none;
+                    }
+                }   
+            }
+        }
+        &__tablet{
+            display: none;
+            @include media('>=tablet'){
+                width: 80%;
+                margin-left: 15rem;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+                
+                @include media('>=desktop'){
+                    max-width: 144rem;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    margin: auto;
+                    
+                }
+                
+                li{
+                    a{  
+                        min-height: 2rem;
+                        min-width: 2rem;
+                        display: inline-block;
+                        margin-top: 5rem;
+                        color: $white;
+                        text-transform: uppercase;
+                        opacity: 70%;
+                        border-bottom: 0.4rem solid transparent;
+                        transition: 0.3s linear;
+                        &:hover{
+                            opacity: 100%;
+                            border-bottom-color: orange;
+                                  
+                        }
+                        @include media('>=desktop'){
+                            margin-top: 2rem;
+
+                        }
+
+                    }
+                }
+            }
+        }
+        &__menu{
+            position: absolute;
+            top:120%;
+            background-color: $black;
+            width: 100%;
+            left: -100%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            display: block;
+            z-index: 3;
+            transition: 0.5s linear;
+            @include media('>=tablet'){
+                display: none;
+            }
+            li {
+              a {
+                display: inline-block;
+                color: $white;
+                text-transform: uppercase;
+                font-size: $fs-b;
+                font-weight: 400;
+                letter-spacing: 0.25rem;
+                line-height: 2.5rem;
+              }
+              
+            }  
+            li:nth-of-type(6){
+                padding-bottom:1rem ;
+            }       
+        }     
+    }  
+}

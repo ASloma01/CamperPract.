@@ -1,0 +1,81 @@
+.contact{
+    height: 30rem;
+    background-image: url(../images/contact.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.2) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        )
+    }
+    color: $white;
+    position: relative;
+    h3,p{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h3{
+        top: 30%;
+        text-align: center;
+        font-size: $fs-s;
+        @include media('>=tablet'){
+         font-size: $fs-l;       
+        }
+    }
+    p{
+        top:60%;
+        border-top:orange solid 0.4rem;
+        border-bottom:orange solid 0.4rem;
+        @include media('>=tablet'){
+            font-size: $fs-l;       
+           }
+    }
+}
+.contactA{
+    height: 30rem;
+    background-image: url(../images/las.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.2) 0.27%,
+          rgba(0, 0, 0, 0.661222) 100%
+        )
+    }
+    color: $white;
+    position: relative;
+    h3,p{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h3{
+        top: 30%;
+        font-size: $fs-s;
+        @include media('>=tablet'){
+         font-size: $fs-l;       
+        }
+    }
+    p{
+        top:60%;
+        border-top:orange solid 0.4rem;
+        border-bottom:orange solid 0.4rem;
+        @include media('>=tablet'){
+            font-size: $fs-l;       
+           }
+    }
+}

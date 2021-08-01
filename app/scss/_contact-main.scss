@@ -1,0 +1,139 @@
+.bgp{
+  height: 30rem;
+  background-image: url(../images/offercika.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  @include media('>=tablet'){
+    height: 40rem;
+  }
+  @include media('>=desktop'){
+  height: 50rem;
+  }
+  h2{
+    color: $white;
+    font-size: 3rem;
+    font-weight: 300;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    text-align: center;
+    line-height: 30rem;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+    @include media('>=tablet'){
+      line-height: 40rem;
+    }
+    @include media('>=desktop'){
+      font-size: 7rem;
+      line-height: 50rem;
+    }    
+  }
+}
+.map{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5rem 0;
+  img{
+    width: 80%;
+    max-width: 75rem;
+  }
+}
+.form{
+  h3{
+    text-align: center;
+    font-weight: 300;
+    font-size: $fs-m;
+    padding-bottom: 2rem;
+  }
+  &__cont{
+    &__location{
+      h4{
+        padding-bottom: 1rem;
+        font-size: $fs-b;
+        font-weight: 700;
+        text-align: center;
+      }
+      p{
+        text-align: center;
+        opacity: 80%;
+        span{
+          color: orange;
+        }
+      }
+      p:first-of-type{
+        padding: 0.2rem;
+      }
+      p:nth-of-type(2){
+        padding: 2rem 0.2rem 2rem;
+      }
+    }
+    &__formular{
+      &__input{
+        max-width: 60rem;
+        margin: auto;
+        padding: 0 1rem;
+        overflow: hidden;
+        input,textarea{
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+          margin: 1.6rem 0;
+          border: 0.1rem solid #bbb;
+          padding: 2rem 3rem;
+          outline: none;
+          color: $black;
+        }
+        textarea::placeholder{
+          font-family: "DM Sans",sans-serif;
+        }
+        button{
+          float: right;
+          border: 0;
+          background: orange;
+          color: $black;
+          padding: 1.2rem 5rem;
+          border-radius: 2rem;
+          cursor: pointer;
+          margin-bottom: 1rem;
+          &:hover{
+            background: #ee9100;
+          }
+        }
+      }
+      h4{
+        padding-bottom: 1rem;
+        font-size: $fs-b;
+        font-weight: 700;
+        text-align: center;
+      }
+    }
+  }
+}
+.luxury{
+  width: 90%;
+  margin: auto;
+  @include media('>=tablet'){
+    width: 60%;
+  }
+  &__des{
+    h4{
+      font-size: 2.5rem;
+      font-weight: 700;
+      padding: 2rem 0;
+    }
+    h5{
+      font-size: $fs-m;
+      font-weight: 300;
+    }
+    p{
+      font-size: $fs-b;
+      opacity: 80%;
+    }
+    p:nth-of-type(4){
+      margin-bottom: 3rem;
+    }
+  }
+}

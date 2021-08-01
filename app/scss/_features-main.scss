@@ -1,0 +1,79 @@
+.title{
+  h2{
+    text-align: center;
+    font-size: $fs-m;
+    padding-top: 5rem;
+    border-bottom: 0.5rem ridge black;
+    @include media('>=tablet'){
+      padding-bottom: 2rem;
+      font-size: $fs-l;
+    @include media('>=desktop'){
+      padding-top: 5rem;
+    }
+    }
+  }
+}
+.features {
+  padding: 8rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  @include media(">=desktop"){
+    max-width: 144rem;
+    margin: auto;
+  }
+  .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s linear;
+    @include media(">=tablet"){
+      flex-basis: 32%;
+    }
+    &:hover{
+      @include media(">=desktop"){
+        transform: scale(1.1);
+      }
+    }
+    img{
+      width: 8.7rem;
+      height: 8.7rem;
+      @include media('>=desktop'){
+        width: 14rem;
+        height: 14rem;
+    }
+    }
+    &__text {
+      text-align: center;
+      a{
+        display: inline-block;
+        color: $black;
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+        border-bottom:0.4rem solid transparent ;
+        transition: 0.3s linear;
+        @include media('>=desktop'){
+          font-size: 3rem; 
+        }
+        &:hover{ 
+          @include media('>=desktop'){
+          border-bottom:0.4rem solid orange ;
+          transform: scale(1.1);
+          
+        }
+
+        } 
+      }
+    }
+  }
+  @include media(">=tablet") {
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+  }
+ 
+  @include media(">=desktop") {
+    padding: 12rem 3.2rem;
+  }
+}

@@ -1,0 +1,359 @@
+.of{
+  height: 30rem;
+  background-image: url(../images/offercika.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  @include media('>=tablet'){
+    height: 40rem;
+  }
+  @include media('>=desktop'){
+  height: 50rem;
+  }
+  h2{
+      color: $white;
+      font-size: 3rem;
+      font-weight: 300;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      right: 0%;
+      text-align: center;
+      line-height: 30rem;
+      background-color: rgba($color: #000000, $alpha: 0.3);
+      @include media('>=tablet'){
+        line-height: 40rem;
+      }
+      @include media('>=desktop'){
+        font-size: 7rem;
+        line-height: 50rem;
+        }
+      
+  }
+}
+
+
+
+.hero{
+  width:80%;
+  min-height: 70rem;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  @include media('>=tablet'){
+    min-height: 70rem;
+    width: 70%;
+  }
+  @include media('>=desktop'){
+    min-height: 60rem;
+    max-width: 124rem;
+    width: 65%;
+  }
+  .fixx{
+    h2{
+      text-transform: uppercase;
+      font-size: $fs-m;
+      text-align: center;
+      padding: 2rem;
+      padding-top: 6rem;
+      @include media('>=desktop'){
+        font-size: $fs-l;
+      }
+    }
+    .btn-box{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-content: space-around;
+      flex-wrap: wrap;
+      border:0.1rem solid #aaa;
+      background-color: #eee;
+      @include media('>=1220px'){
+        flex-wrap: nowrap;
+        
+      }
+      button{
+        box-sizing: border-box;
+        background-color: #eee;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        width:25rem;
+        padding: 1.4rem 1.6rem;
+        margin-right: 5rem;
+        margin: 0 2.5rem 0 2.5rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        border:0.1rem solid #aaa;
+        @include media('>=desktop'){
+          font-size: 2rem;
+        }
+
+      }
+    }
+    .cont{
+      position: absolute;
+      transform: translateX(300%);
+      border: 0.1rem solid #aaa;
+      width: 100%;
+      min-height: 30rem;
+      i{
+        color: green;
+        padding-right: 1rem;
+        font-size: 2rem;
+      }
+      
+      p{
+        padding: 0.5rem 0.3rem 0.3rem 2rem;
+        font-size: $fs-xs;
+        opacity: 80%;
+        @include media('>=tablet'){
+          font-size: $fs-s;
+        }
+        @include media('>=desktop'){
+          font-size: $fs-b;
+        }
+      }
+      
+    }
+    
+  }
+}
+#cont1{
+  transform: translateX(0px);
+}
+#btn1{
+  color: orange;
+}
+.all{
+  width: 100%;
+  &__txt{
+    &__price{
+      width: 80%;
+      margin: auto;
+      @include media('>=tablet'){
+        min-height: 70rem;
+        width: 70%;
+      }
+      @include media('>=desktop'){
+        min-height: 60rem;
+        max-width: 124rem;
+        width: 65%;
+      }
+      h3{
+        font-size: $fs-b;
+        font-weight: 700;
+      }
+      p{
+        padding: 1.5rem 0.1rem;
+        font-weight: 300;
+        opacity: 80%;
+        font-size: $fs-b;
+      }
+      p:nth-of-type(3){
+        font-style: italic;
+      }
+      &__grid{
+        border: 0.1rem solid #aaa;
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        gap: 0px 0px;
+        grid-template-areas:
+          "seasonTitle priceTitle"
+          "season1 price1"
+          "season2 price2"
+          "season3 price3";
+      }
+      .center{
+        display: flex;
+        align-items: center;
+        padding-left:1rem;
+        font-size: $fs-b;
+      }
+      .priceT {
+        grid-area: priceTitle;
+        background-color: #dcdcdc;
+        p{
+          font-weight: 700;
+        } 
+      }
+      .seasonT { 
+        grid-area: seasonTitle;
+        background-color: #dcdcdc;
+        p{
+          font-weight: 700;
+        }
+      }
+      .season1 { 
+        grid-area: season1;       
+      }
+      .price1 { 
+        grid-area: price1;        
+      }
+      .season2 { 
+        grid-area: season2;
+        background-color: #efefef;  
+      }
+      .price2 { 
+        grid-area: price2;
+        background-color: #efefef;  
+      }
+      .season3 { 
+        grid-area: season3;
+      }
+      .price3 {
+        grid-area: price3; 
+      }
+      &__grid1{
+        border: 0.1rem solid #aaa;
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "serviceT pricT"
+          "service1 pric1"
+          "service2 pric2"
+          "service3 pric3"
+          "service4 pric4"
+          "service5 pric5"
+          "service6 pric6"
+          "service7 pric7"
+          "service8 pric8";
+      }
+      .serviceT{
+        grid-area:serviceT;
+        background-color: #dcdcdc;
+        p{
+          font-weight: 700;
+        } 
+      }
+      .service1{
+        grid-area:service1 ;
+      }
+      .service2{
+        grid-area:service2 ;
+      }
+      .service3{
+        grid-area: service3;
+      }
+      .service4{
+        grid-area:service4 ;
+      }
+      .service5{
+        grid-area:service5 ;
+      }
+      .service6{
+        grid-area:service6 ;
+      }
+      .service7{
+        grid-area:service7 ;
+      }
+      .service8{
+      grid-area:service8 ;
+      }
+      .pricT{
+        grid-area: pricT;
+        background-color: #dcdcdc;
+        p{
+          font-weight: 700;
+        } 
+      }
+      .pric1{
+      grid-area: pric1;
+      }
+      .pric2{
+        grid-area: pric2;
+      }
+      .pric3{
+        grid-area:pric3;
+      }
+      .pric4{
+        grid-area:pric4 ;
+      }
+      .pric5{
+        grid-area: pric5;
+      }
+      .pric6{
+        grid-area:pric6;
+      }
+      .pric7{
+        grid-area:pric7 ;
+      }
+      .pric8{
+        grid-area: pric8;
+      }
+      .service2,.service4,.service6,.service8,.pric2,.pric4,.pric6,.pric8{
+        background-color: #efefef;
+      }
+      h3:nth-of-type(n+1){
+        padding-top: 2rem;
+      }
+      &__grid2{
+        border: 0.1rem solid #aaa;
+        margin-bottom: 3rem;
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "eqT prT"
+          "eq1 pr1"
+          "eq2 pr2"
+          "eq3 pr3"
+          "eq4 pr4"
+          "eq5 pr5"
+      }
+      .eqT{
+        grid-area: eqT;
+        background-color: #dcdcdc;
+        p{
+          font-weight: 700;
+        }
+      }
+      .eq1{
+        grid-area: eq1;
+      }
+      .eq2{
+        grid-area: eq2;
+      }
+      .eq3{
+        grid-area: eq3;
+      }
+      .eq4{
+        grid-area: eq4;
+      }
+      .eq5{
+        grid-area: eq5;
+      }
+      .prT{
+        grid-area: prT;
+        background-color: #dcdcdc;
+        p{
+          font-weight: 700;
+        }
+      }
+      .pr1{
+        grid-area: pr1;
+      }
+      .pr2{
+        grid-area:pr2 ;
+      }
+      .pr3{
+        grid-area:pr3 ;
+      }
+      .pr4{
+        grid-area: pr4;
+      }
+      .pr5{
+        grid-area:pr5;
+      }
+      .eq2,.eq4,.pr2,.pr4{
+        background-color: #efefef;
+      }
+    }
+  }
+  
+}

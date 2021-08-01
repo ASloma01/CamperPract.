@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta - Wynajem Kamperów</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/lightbox.min.css">
+    <script src= "./app/js/lightbox-plus-jquery.min.js"></script>
+      
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="logo">
+            <a href="./index.html"><img src="./images/logo3.png" alt=""></a></a>
+            <div class="logo__ham">
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+            <!-- menu mobile -->
+            <div class="logo__menu " style = "left:-100%;">
+                <li><a href="./index.html">Strona główna</a></li>
+                <li><a href="./about.html">O firmie</a></li>
+                <li><a href="./gallery.html">Galeria</a></li>
+                <li><a href="./contact.html">Kontakt</a></li>
+                <li><a href="./rentcamper.html">wynajem kamperów</a></li>
+                <li><a href="./offer.html">Oferta</a></li>
+            </div>
+            <!-- menu tablet + desktop -->
+            <div class="logo__tablet ">
+                <li><a href="./index.html">Strona główna</a></li>
+                <li><a href="./about.html">O firmie</a></li>
+                <li><a href="./gallery.html">Galeria</a></li>
+                <li><a href="./contact.html">Kontakt</a></li>
+                <li><a href="./rentcamper.html">wynajem kamperów</a></li>
+                <li><a href="./offer.html">Oferta</a></li>
+            </div>
+        </div>
+    <div class="of">
+      <h2>Oferta</h2>
+    </div>
+    <div class="hero">
+      <div class="fixx">
+        <h2>Oferta wypożyczenia kampera</h2>
+        <div class="btn-box">
+          <button id="btn1" onclick="openFirst()">Wydanie samochodu:</button>
+          <button id="btn2" onclick="openSecond()">Warunki i kaucja:</button>
+          <button id="btn3" onclick="openThird()">Zwort samochodu:</button>
+          <button id="btn4" onclick="openFourth()">Dodatkowo zapewniamy:</button>
+        </div>
+        <div id="cont1" class="cont">
+          <div class="cont-one">
+            <p> <i class="fas fa-check-circle"></i>Ubezpieczenie OC/AC/NW + Assistance</p>
+              <p><i class="fas fa-check-circle"></i>Wyczyszczony na zewnątrz oraz wewnątrz</p>
+              <p><i class="fas fa-check-circle"></i>Uzupełniony zbiornik paliwa</p>
+              <p><i class="fas fa-check-circle"></i>Uzupełniony płyn do spryskiwaczy</p>
+              <p><i class="fas fa-check-circle"></i>Sprawdzony stan techniczny</p>
+              <p><i class="fas fa-check-circle"></i>Pełny zbiornik wody czystej</p>
+              <p><i class="fas fa-check-circle"></i>Wyposażenie kempingowe</p></p>
+          </div>
+        </div>
+        <div id="cont2" class="cont">
+          <div class="cont-one">
+            <p> <i class="fas fa-check-circle"></i>Brak opłaty serwisowej!</p>
+              <p><i class="fas fa-check-circle"></i>Brak limitu kilometrów!</p>
+              <p><i class="fas fa-check-circle"></i>Do podpisania umowy konieczny dokument tożsamości</p>
+              <p><i class="fas fa-check-circle"></i>Wydanie samochodu następuje po wpłaceniu należności</p>
+              <p><i class="fas fa-check-circle"></i>Opłata rezerwacyjna wynosi 30% wartości najmu</p>
+              <p><i class="fas fa-check-circle"></i>Kaucja zwrotna w wysokości 5000 zł (płatność gotówką, przelewem bądź blokada środków na karcie, zwrot do 5 dni po zwrocie pojazdu)</p></p>
+          </div>
+        </div>
+        <div id="cont3" class="cont">
+          <div class="cont-one"></p>
+            <p><i class="fas fa-check-circle"></i>Wyczyszczony na zewnątrz oraz wewnątrz</p>
+            <p><i class="fas fa-check-circle"></i>Uzupełniony zbiornik paliwa</p>
+            <p><i class="fas fa-check-circle"></i>Uzupełniony płyn do spryskiwaczy</p>
+            <p><i class="fas fa-check-circle"></i>Puste zbiorniki na wodę oraz kaseta WC</p>
+            <p><i class="fas fa-check-circle"></i>Pełna butla gazowa</p>
+          </div>
+        </div>
+        <div id="cont4" class="cont">
+          <div class="cont-one">
+            <p><i class="fas fa-check-circle"></i>Bagażnik rowerowy </p>
+              <p><i class="fas fa-check-circle"></i>Dwa rowery </p>
+              <p><i class="fas fa-check-circle"></i>Ekspres do kawy </p>
+              <p><i class="fas fa-check-circle"></i>Grill </p>
+              <p><i class="fas fa-check-circle"></i>Liny poziomujące </p>
+              <p><i class="fas fa-check-circle"></i>Markizę wraz ze sztormiakami </p>
+              <p><i class="fas fa-check-circle"></i>Meble ogrodowe (stół + 4 krzesła) </p>
+              <p><i class="fas fa-check-circle"></i>Telewizor z USB </p>
+              <p><i class="fas fa-check-circle"></i>Możliwość zostawienia samochodu na zamkniętym parkingu </p>
+              <p><i class="fas fa-check-circle"></i>Telewizor </p>
+    
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="all">
+      <div class="all__txt">
+        <div class="all__txt__price">
+          <h3>CENNIK NAJMU</h3>
+          <p>Podane ceny są cenami netto za dobę</p>
+          <div class="all__txt__price__grid">
+            <div class="center priceT "><p>Cena zł</p></div>
+            <div class="center seasonT "><p>Sezon</p></div>
+            <div class="center season1"><p> Sezon wysoki (28.04.-06.05.2018, 26.05.-03.06.2018, 15.06.-15.09.2018)</p></div> 
+            <div class="center price1 "><p>650</p></div>
+            <div class="center season2 "><p>Sezon średni (od kwietnia do maja oraz październik)*	</p></div>
+            <div class="center price2 "><p>550</p></div>
+            <div class="center season3 "><p>Sezon niski (od listopada do marca)*</p></div>
+            <div class="center price3 "><p>450</p></div>
+          </div>
+          <p>Minimalny okres wynajmu 6 dni</p>
+          <p>*za wyjątkiem weekendów świątecznych (Majówka, Boże Ciało, itp.)</p>
+          <h3>CENNIK USŁUG DODATKOWYCH</h3>
+          <p>Podane ceny są cenami netto</p>
+          <div class="all__txt__price__grid1">
+            <div class="center pricT "><p>Cena zł</p></div>
+            <div class="center serviceT "><p>Usługa</p></div>
+            <div class="center service1"><p>Dowóz kampera do klienta	</p></div> 
+            <div class="center pric1 "><p>do uzg.</p></div>
+            <div class="center service2 "><p>Zwrot auta brudnego na zewnątrz</p></div>
+            <div class="center pric2 "><p>100</p></div>
+            <div class="center service3 "><p>Zwrot auta brudnego wewnątrz</p></div>
+            <div class="center pric3 "><p>300</p></div>
+            <div class="center service4 "><p>Opróżnienie toalety chemicznej</p></div>
+            <div class="center pric4 "><p>200</p></div>
+            <div class="center service5 "><p>Napełnienie butli gazowej</p></div>
+            <div class="center pric5 "><p>50</p></div>
+            <div class="center service6 "><p>Chemiczne czyszczenie tapicerki</p></div>
+            <div class="center pric6 "><p>300</p></div>
+            <div class="center service7 "><p>Zwrot niezatankowanego auta</p></div>
+            <div class="center pric7 "><p>100 zł + koszt paliwa</p></div>
+            <div class="center service8 "><p>Zwrot auta z nieopróżnionym zbiornikiem szarej wody</p></div>
+            <div class="center pric8 "><p>100</p></div>
+          </div>
+          <h3>CENNIK WYPOSAŻENIA DODATKOWEGO:</h3>
+          <p>Podane ceny są cenami netto</p>
+          <div class="all__txt__price__grid2">
+            <div class="center prT "><p>Cena zł</p></div>
+            <div class="center eqT "><p>Sezon</p></div>
+            <div class="center eq1"><p> Sezon wysoki (28.04.-06.05.2018, 26.05.-03.06.2018, 15.06.-15.09.2018)</p></div> 
+            <div class="center pr1 "><p>650</p></div>
+            <div class="center eq2 "><p>Sezon średni (od kwietnia do maja oraz październik)*	</p></div>
+            <div class="center pr2 "><p>550</p></div>
+            <div class="center eq3 "><p>Sezon niski (od listopada do marca)*</p></div>
+            <div class="center pr3 "><p>450</p></div>
+            <div class="center eq4 "><p>Sezon niski (od listopada do marca)*</p></div>
+            <div class="center pr4 "><p>450</p></div>
+            <div class="center eq5 "><p>Sezon niski (od listopada do marca)*</p></div>
+            <div class="center pr5 "><p>450</p></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+        
+    <div class="footer">
+      <div class="footer__logo">
+          <img src="./images/logo3.2.png" alt="">
+      </div>
+      <div class="footer__text">
+          <h3>Dane kontaktowe</h3>
+          <a href="./contact.html">Pytania? Skontaktuj się z nami!</a>
+          <p>Adres 1A</p>
+          <p>99-300 Miasto</p>
+          <p>tel. +48 987 654 321</p>
+          <p>emailkontakowy@gmail.com</p>
+      </div>
+  </div>
+</div>
+<script src= "./app/js/script.js"></script>
+</html>
